@@ -5,7 +5,7 @@ import Header from './Components/Header.js'
 
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('')
   const appClass = theme === 'dark' ? "App dark" : "App light";
   
     const handleDarkModeToggle = () => {
@@ -16,7 +16,7 @@ function App() {
     return (
       <div className={appClass}>
         <header>
-          <h2>Build-a-Burger</h2>
+          <Header/>
           <button onClick={handleDarkModeToggle}>
           {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
           </button>

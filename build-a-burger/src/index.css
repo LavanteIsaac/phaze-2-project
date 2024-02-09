@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* Light theme styles */
+.App.light {
+  background-color: #fff; /* Light background */
+  color: #000; /* Dark text */
 }
+
+/* Dark theme styles */
+.App.dark {
+  background-color: #333; /* Dark background */
+  color: #fff; /* Light text */
+}
+
+/* .ui.inverted.menu .ui.toggle.checkbox input:checked~label {
+  color: black !important;
+}
+
+.dark-mode {
+  color: black;
+  background-color: #aaa;
+}
+
+.main.container {
+  padding-top: 5em;
+}
+
+.dark-mode .ui.segment, 
+.dark-mode .ui.feed,
+.dark-mode .ui.card, 
+.dark-mode .ui.cards>.card {
+  background-color: #333;
+  color: white !important;
+}
+
+.dark-mode .ui.feed>.event>.content .summary,
+.dark-mode .ui.feed>.event>.content .extra.text,
+.dark-mode .ui.cards>.card>.content>.header,
+.dark-mode .ui.cards>.card>.content>.description {
+  color: white !important;
+}
+
+.dark-mode .ui.feed>.event>.content .meta a,
+.dark-mode .ui.feed>.event>.content .summary>.date {
+  color: rgba(255,255,255,.6) !important;
+} */
