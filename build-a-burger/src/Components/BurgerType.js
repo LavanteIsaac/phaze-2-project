@@ -1,18 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function BurgerType() {
-    return (
-      <header>
-        <h1>
-          Build-a-Burger
-          <span className="logo" role="img">
-          🍔🍔🍔🍔
-          </span>
-        </h1>
-      </header>
-    );
-  }
+const BurgerType = ({ burgers }) => {
+const { id, name, image, type} = burgers
 
-
+  return (
+    <li> className='card' 
+      <h3>{name}</h3>
+      <img src={image} alt={name} id={id}/>
+      <p>Type: {type}</p>
+    </li>
+  );
+};
 
 export default BurgerType;

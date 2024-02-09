@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './index.css';
 // our components
 import Header from './Components/Header.js'
+import BurgerType from './Components/BurgerType.js'
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
           </button>
         </header>
+        <BurgerType/>
+        
       </div>
     );
   }

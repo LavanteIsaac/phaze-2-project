@@ -1,0 +1,83 @@
+//Informational objects for each "card"
+
+{
+    "burgers": [
+      {
+        "id": 1,
+        "name": "rama",
+        "image": "",
+        "type": "Beef"
+      },
+      {
+        "id": 2,
+        "name": "lama",
+        "image": "",
+        "type": "Veggie"
+      },
+      {
+        "id": 3,
+        "name": "ding",
+        "image": "",
+        "type": "Turkey"
+      }
+
+    ],
+
+    "cookTemp": [
+        {
+          "id": 1,
+          "name": "dong",
+          "image": "./images/aloe.jpg",
+          "type": "Rare"
+          },
+        {
+            "id": 2,
+            "name": "shama",
+            "image": "./images/aloe.jpg",
+            "type": "Medium"
+          },
+        {
+            "id": 3,
+            "name": "aardvark",
+            "image": "./images/aloe.jpg",
+            "type": "Welldone"
+        }
+    ],
+
+    "Fixins": [
+        {
+          "id": 1,
+          "name": "topOne",
+          "image": "./images/aloe.jpg",
+          "type": "Ketchup"
+          },
+        {
+            "id": 2,
+            "name": "topTwo",
+            "image": "./images/aloe.jpg",
+            "type": "Mustard"
+          },
+        {
+            "id": 3,
+            "name": "topThree",
+            "image": "./images/aloe.jpg",
+            "type": "Lettuce"
+        }
+    ],
+    "DineType": [
+        {
+          "id": 1,
+          "name": "stay",
+          "image": "./images/aloe.jpg",
+          "type": "Dine-In"
+          },
+        {
+            "id": 2,
+            "name": "go",
+            "image": "./images/aloe.jpg",
+            "type": "Takeout"
+          }
+    ]
+    
+}
+    
