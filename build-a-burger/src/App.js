@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './index.css';
+// our components
+import Header from './Components/Header.js'
+import BurgerType from './Components/BurgerType.js'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [theme, setTheme] = useState('')
+  const appClass = theme === 'dark' ? "App dark" : "App light";
+  
+    const handleDarkModeToggle = () => {
+      setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+  
+
+    return (
+      <div className={appClass}>
+        <header>
+          <Header/>
+          <button onClick={handleDarkModeToggle}>
+          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+          </button>
+        </header>
+        <BurgerType/>
+        
+      </div>
+    );
+  }
+
+
 
 export default App;
