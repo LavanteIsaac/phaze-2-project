@@ -4,7 +4,7 @@ const BurgerType = ({ burgers }) => {
 const { id, name, image, type} = burgers
 
 // useEffect(() => {
-// fetch("http://localhost:6001/") 
+// fetch("http://localhostgit:6001/") 
 //     .then(r => r.json())
 //     .then(dbBurgers => setBurger(dbBurgers))
 //   }, []);
