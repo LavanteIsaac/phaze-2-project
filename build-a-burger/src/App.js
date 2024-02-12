@@ -52,27 +52,12 @@ function App() {
           {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
           </button>
         </header>
-        <BurgerType key={burgers.name} burgers={burgers} />
-        <FixinsType key={fixins.name} fixins={fixins} />
-        <CookTemp key={cookTemp.name} cookTemp={cookTemp} />
-        <DineType key ={DineType.name} DineType={DineType} />
+        <BurgerType burgers={burgers} />
+        <FixinsType fixins={fixins} />
+        <CookTemp cookTemp={cookTemp} />
+        <DineType dineType={dineType} />
       </div>
     );
   }
 
 export default App;
-
-
-
-
- // const addBurgers = (newBurgers) => {
-        //   fetch("http://localhost:3001", {
-        //   method: "POST",
-        //   headers: {"Content-Type": "Application/JSON"},
-        //   body: JSON.stringify(newBurgers),
-        //   })
-        //   .then((resp) => resp.json())
-        //   .then((data) => {
-        //     setBurgers([...burgers, data]);
-        //   })
-        // };
