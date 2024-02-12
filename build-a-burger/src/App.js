@@ -3,12 +3,16 @@ import React, { useState, useEffect } from 'react'
 import Header from './Components/Header.js'
 import BurgerType from './Components/BurgerType.js'
 import FixinsType from './Components/FixinsType.js'
+import CookTemp from './Components/CookTemp.js'
+import DineType from './Components/DineType.js'
 
 function App() {
   const [theme, setTheme] = useState('light')
   const [burgers, setBurgers] = useState([]);
   const appClass = theme === 'dark' ? "App dark" : "App light";
   const [fixins, setFixins] = useState([])
+  const [cookTemp, setCookTemp] = useState([])
+  const [dineType, setDineType] = useState([])
    
   
   const handleDarkModeToggle = () => {
@@ -16,16 +20,28 @@ function App() {
     };
   
        useEffect(() => {
-      fetch("http://localhost:3001/") 
+      fetch("http://localhost:3001/burgers") 
           .then(r => r.json())
           .then(dbBurgers => setBurgers(dbBurgers))
         }, []);
 
         useEffect(() => {
-          fetch("http://localhost:3001/") 
+          fetch("http://localhost:3001/fixins") 
               .then(r => r.json())
               .then(dbFixins => setFixins(dbFixins))
             }, []);
+        
+        useEffect(() => {
+          fetch("http://localhost:3001/cookTemp")
+          .then(r => r.json())
+          .then(dbCookTemp => setCookTemp(dbCookTemp))
+        }, []);
+
+        useEffect(() => {
+          fetch("http://localhost:3001/dineType")
+          .then(r => r.json())
+          .then(dbDineType => setDineType(dbDineType))
+        }, []);
     
        
     return (
@@ -38,6 +54,8 @@ function App() {
         </header>
         <BurgerType key={burgers.name} burgers={burgers} />
         <FixinsType key={fixins.name} fixins={fixins} />
+        <CookTemp key={cookTemp.name} cookTemp={cookTemp} />
+        <DineType key ={DineType.name} DineType={DineType} />
       </div>
     );
   }
