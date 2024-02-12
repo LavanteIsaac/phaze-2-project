@@ -1,17 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const BurgerType = ({ burgers }) => {
 
+  const [selected, setSelected] = useState('');
+
+    const toggleSelected = () => {
+      setSelected(!selected);
+
+  };
+
   return (
-    <ul>
+
+    <ul className="burger-card">
       {burgers.map((burger) => (
         <li className='card' key={burger.id}> 
           <h3>{burger.name}</h3>
           <img src={burger.image} alt={burger.name} id={burger.id}/>
           <p>{burger.type}</p>
-        </li>
+          {selected ? (
+        <button className="primary" onClick= {toggleSelected}>Selected</button>
+      ) : (
+        <button onClick= {toggleSelected}></button>
+      )}
+           </li>
       ))}
     </ul>
+
   );
 };
 
