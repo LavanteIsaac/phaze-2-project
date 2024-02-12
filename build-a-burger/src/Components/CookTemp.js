@@ -1,18 +1,18 @@
 import React from 'react'
 
 const CookTemp = ( { cookTemp } ) => {
-    const { id, name, image, type } = cookTemp
-
-
 
     return (
-        <li className= 'card'>
-            <h4>{name}</h4>
-            <img src={image} alt={name} id={id}/>
-            <p>{type}</p>
+        <ul>
+          {cookTemp.map((temp) => (
+            <li className='card' key={temp.id}> 
+              <h3>{temp.name}</h3>
+              <img src={temp.image} alt={temp.name} id={temp.id}/>
+              <p>{temp.type}</p>
             </li>
-    )
-
-}
-
+          ))}
+        </ul>
+      );
+    };
+    
 export default CookTemp
