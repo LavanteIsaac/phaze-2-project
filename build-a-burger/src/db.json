@@ -42,7 +42,7 @@
         }
     ],
 
-    "Fixins": [
+    "fixins": [
         {
           "id": 1,
           "name": "topOne",
@@ -62,17 +62,17 @@
             "type": "Lettuce"
         }
     ],
-    "DineType": [
+    "dineType": [
         {
           "id": 1,
           "name": "stay",
-          "image": "./images/aloe.jpg",
+          "image": "./src/assets/burger.png",
           "type": "Dine-In"
           },
         {
             "id": 2,
             "name": "go",
-            "image": "./images/aloe.jpg",
+            "image": "./src/assets/burger.png",
             "type": "Takeout"
           }
     ]
