@@ -2,20 +2,20 @@
     "burgers": [
       {
         "id": 1,
-        "name": "rama",
-        "image": "",
+        "name": "",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdv1NR5rlf0C_J4hk2IhDxY7ObrysjDhWPRFeuIA72Q&s",
         "type": "Beef"
       },
       {
         "id": 2,
-        "name": "lama",
-        "image": "",
+        "name": "",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluK2obnembb4q5PPzE38N2bxTg27i-QYqJULvDsSYWQ&s",
         "type": "Veggie"
       },
       {
         "id": 3,
-        "name": "ding",
-        "image": "",
+        "name": "",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiw-U5lPwf9fbUV4iSM5kmSYcv-uwPj3d-gcKno72kpA&s",
         "type": "Turkey"
       }
 
@@ -24,7 +24,7 @@
     "cookTemp": [
         {
           "id": 1,
-          "name": "dong",
+          "name": "",
           "image": "./images/aloe.jpg",
           "type": "Rare"
           },
@@ -66,7 +66,7 @@
         {
           "id": 1,
           "name": "stay",
-          "image": "../assets/burger.png",
+          "image": "./assets/burger.png",
           "type": "Dine-In"
           },
         {
