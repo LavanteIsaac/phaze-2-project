@@ -1,22 +1,18 @@
 import React from 'react';
 
 const BurgerType = ({ burgers }) => {
-const { id, name, image, type} = burgers
-
-// useEffect(() => {
-// fetch("http://localhostgit:6001/") 
-//     .then(r => r.json())
-//     .then(dbBurgers => setBurger(dbBurgers))
-//   }, []);
 
   return (
-    <li className='card'> 
-      <h3>{name}</h3>
-      <img src={image} alt={name} id={id}/>
-      <p>{type}</p>
-    </li>
+    <ul>
+      {burgers.map((burger) => (
+        <li className='card' key={burger.id}> 
+          <h3>{burger.name}</h3>
+          <img src={burger.image} alt={burger.name} id={burger.id}/>
+          <p>{burger.type}</p>
+        </li>
+      ))}
+    </ul>
   );
 };
-
 
 export default BurgerType;

@@ -1,22 +1,19 @@
 import React from 'react';
 
 const FixinsType = ({ fixins }) => {
-    const { id, name, image, type} = fixins
     
-   
-    
-      return (
-        <li className='card'> 
-          <h4>{name}</h4>
-          <img src={image} alt={name} id={id}/>
-          <p>{type}</p>
+return (
+    <ul>
+      {fixins.map((fixin) => (
+        <li className='card' key={fixin.id}> 
+          <h3>{fixin.name}</h3>
+          <img src={fixin.image} alt={fixin.name} id={fixin.id}/>
+          <p>{fixin.type}</p>
         </li>
-      );
-    };
+      ))}
+    </ul>
+  );
+};
     
-    
-
-
-
 export default FixinsType
 
