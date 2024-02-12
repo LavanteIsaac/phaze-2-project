@@ -25,9 +25,12 @@ code {
 }
 
 .card {
-
+  margin: 1rem;
+  box-shadow: 0 0 7px 0 #ddd;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
 }
-
 /* .ui.inverted.menu .ui.toggle.checkbox input:checked~label {
   color: black !important;
 }
