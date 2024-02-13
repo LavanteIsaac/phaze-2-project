@@ -11,7 +11,7 @@ function NewInsta() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const newUser = {
+     const newUser = {
       name: userName,
       age: userAge, 
       pronoun: userPronoun,
@@ -19,27 +19,52 @@ function NewInsta() {
 
     };
 
-    addUser(newUser);
-    setUserName("");
-    setUserAge("");
-    setUserPronoun("");
-    setUserInsta("")
-
+    
+      setUserName("");
+      setUserAge("");
+      setUserPronoun("");
+      setUserInsta("")
+    
 };
+
+
+function onChangeHandler(event){
+  setUserName(event.target.value)
+  setUserAge(event.target.value)
+  setUserPronoun(event.target.value)
+  setUserInsta(event.target.value)
+  
+  
+  
+  const addUser = (newUser) => {
+    fetch("http://localhost:3001/", {
+    method: "POST",
+    headers: {"Content-Type": "Application/JSON"},
+    body: JSON.stringify(newUser),
+    })
+    .then((resp) => resp.json())
+    .then((data) => {
+      setUserName([...NewInsta, newUser]);
+    })
+  };
+}
+
+
+
   
  return (
    <div className="new-insta-form">
     <h2>New Insta</h2>
     <form onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="User name" onChange={(event) => setUserName(event.target.value)}/>
-      <input type="text" name="age" placeholder= "Age" onChange={(event)=> setUserAge(event.target.value)}/>
-      <input type="text" name="prounoun" placeholder= "Pronouns" onChange={(event)=> setUserPronoun(event.target.value)}/>
-      <input type="text" name="image" placeholder="Image URL" onChange={(event) => setUserInsta(event.target.value)}/>
+      <input type="text" name="name" placeholder="User name" onChange={onChangeHandler}/>
+      <input type="text" name="age" placeholder= "Age" onChange={onChangeHandler}/>
+      <input type="text" name="prounoun" placeholder= "Pronouns" onChange={onChangeHandler}/>
+      <input type="text" name="image" placeholder="Image URL" onChange={onChangeHandler}/>
    
       <button type="submit">Add New Instat</button>
     </form>
     <NavLink to="/App">-GO BACK!-</NavLink>
-        
+     
   </div>
          
           
