@@ -1,7 +1,0 @@
-import React from 'react';
-import BurgerType from "./Components/BurgerType"
-
-const AllBurger = ({  }) => 
-    
-
-export default AllBurger
