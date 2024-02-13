@@ -3,7 +3,7 @@ import React from 'react'
 const CookTemp = ( { cookTemp } ) => {
 
     return (
-        <ul>
+        <ul className="cook-card">
           {cookTemp.map((temp) => (
             <li className='card' key={temp.id}> 
               <h3>{temp.name}</h3>

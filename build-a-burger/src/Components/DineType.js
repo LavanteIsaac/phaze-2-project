@@ -3,7 +3,7 @@ import React from 'react';
 const DineType = ({ dineType }) => {
 
     return (
-        <ul>
+        <ul className="dine-card">
           {dineType.map((dine) => (
             <li className='card' key={dine.id}> 
               <h3>{dine.name}</h3>
