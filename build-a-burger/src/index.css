@@ -25,11 +25,42 @@ code {
 }
 
 .card {
+  display: flex;
+  align-items: center;
   margin: 1rem;
   box-shadow: 0 0 7px 0 #ddd;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 300px;
+}
+
+.card img {
+  flex: 0 0 100px;
+  margin-right: 1rem;
+}
+
+.burger-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cook-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dine-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fixins-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* .ui.inverted.menu .ui.toggle.checkbox input:checked~label {
   color: black !important;
