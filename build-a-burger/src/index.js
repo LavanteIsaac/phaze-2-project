@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Welcome from "./Components/Welcome"
-import Selfie from "./Components/Selfie"
+import NewInsta from "./Components/NewInsta"
 import Header from "./Components/Header"
 const routes = [
   {
@@ -22,8 +22,8 @@ const routes = [
 },
 
   {
-    path: '/selfie',
-    element:  < Selfie/>
+    path: '/NewInsta',
+    element:  < NewInsta />
   }
 ]
 
