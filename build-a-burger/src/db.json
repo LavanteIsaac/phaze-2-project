@@ -88,6 +88,24 @@
             "image": "https://pngimg.com/uploads/shopping_bag/shopping_bag_PNG6380.png",
             "type": "Takeout"
           }
-    ]
+
+
+    ],
     
-}
+    "newInsta": [
+      {
+        "id": 1,
+        "name": "Isaac",
+        "age": "35",
+        "prounoun": "He/Him",
+        "insta": "instagram.com/sir_isaac88"
+        }
+  
+
+
+  ]
+  
+
+
+  }
+

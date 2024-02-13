@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+selfie
+
+
+user to imput thier info (name age pronouns insta handle)
+form submission -4 fields
+onSubmit button
+user data stored and updated in db json 
+
+-create form in selfie 
