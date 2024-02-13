@@ -1,14 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import  { RouterProvider, createBrowserRouter } from  "react-router-dom"
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Welcome from "./Components/Welcome"
+import Selfie from "./Components/Selfie"
+import Header from "./Components/Header"
+const routes = [
+  {
+    path: '/',
+    element:  < Welcome />,
+ 
+    
+ },
 
+{
+  path: '/App',
+  element: <App/>,
+  
+},
+
+  {
+    path: '/selfie',
+    element:  < Selfie/>
+  }
+]
+
+const router = createBrowserRouter(routes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

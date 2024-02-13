@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FixinsType = ({ fixins }) => {
-    
+    console.log(fixins)
 return (
     <ul className="fixins-card">
       {fixins.map((fixin) => (
