@@ -36,6 +36,19 @@ code {
   margin-bottom: 20px;
 }
 
+.header-container {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.header-title {
+  margin: 0; 
+}
+
+.logo {
+  font-size: 24px; 
+}
+
 .burger-image {
   width: 700px;
   height: auto;

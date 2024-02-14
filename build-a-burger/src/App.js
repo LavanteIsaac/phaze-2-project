@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// our components
 
 import Header from './Components/Header.js'
 import BurgerType from './Components/BurgerType.js'
@@ -45,7 +44,6 @@ function App() {
           .then(r => r.json())
           .then(dbDineType => setDineType(dbDineType))
         }, []);
-    
        
     return (
       <div className={appClass}>
@@ -57,7 +55,6 @@ function App() {
           
         </header>
        
-
         <BurgerType burgers={burgers} />
         <FixinsType fixins={fixins} />
         <CookTemp cookTemp={cookTemp} />
@@ -65,9 +62,6 @@ function App() {
         <Done />
         
       </div>
-
-
-
     );
   }
 

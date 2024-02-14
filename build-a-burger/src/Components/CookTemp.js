@@ -29,4 +29,5 @@ const CookTemp = ( { cookTemp } ) => {
     </ul>
   );
 };
+
 export default CookTemp

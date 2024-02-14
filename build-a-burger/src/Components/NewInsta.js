@@ -7,38 +7,6 @@ function NewInsta() {
   const [userPronoun, setUserPronoun] = useState("");
   const [userInsta, setUserInsta] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const newUser = {
-      name: userName,
-      age: userAge,
-      pronoun: userPronoun,
-      insta: userInsta
-    };
-
-    addUser(newUser);
-  };
-
-  const onChangeHandler = (event) => {
-    const { name, value } = event.target;
-    switch(name) {
-      case 'name':
-        setUserName(value);
-        break;
-      case 'age':
-        setUserAge(value);
-        break;
-      case 'pronoun':
-        setUserPronoun(value);
-        break;
-      case 'image':
-        setUserInsta(value);
-        break;
-      default:
-    }
-  };
-
   const addUser = (newUser) => {
     fetch("http://localhost:3001/newInsta", { 
       method: "POST",
@@ -49,6 +17,34 @@ function NewInsta() {
     .then((data) => {
       console.log(data); 
     });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newUser = {
+      name: userName,
+      age: userAge,
+      pronoun: userPronoun,
+      insta: userInsta
+    };
+    
+    addUser(newUser); 
+  };
+
+  const onChangeHandler = (event) => {
+    const { name, value } = event.target;
+    const stateUpdateFunction = {
+      "name": setUserName,
+      "age": setUserAge,
+      "pronoun": setUserPronoun,
+      "image": setUserInsta,
+    };
+
+    const stateUpdate = stateUpdateFunction[name];
+    if (stateUpdate) {
+      stateUpdate(value);
+    }
   };
 
   return (
