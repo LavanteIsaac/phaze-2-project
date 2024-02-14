@@ -1,111 +1,111 @@
 {
-    "burgers": [
-      {
-        "id": 1,
-        "name": "Old Reliable",
-        "image": "https://clipart-library.com/images_k/cheeseburger-transparent/cheeseburger-transparent-13.png",
-
-        "type": "Beef"
-      },
-      {
-        "id": 2,
-        "name": "Saladshooter",
-        "image": "https://eluxemagazine.com/wp-content/uploads/2016/04/VeggieBurger.png",
-        "type": "Veggie"
-      },
-      {
-        "id": 3,
-        "name": "Turkalicious",
-        "image": "https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4115.png",
-        "type": "Turkey"
-      }
-
-    ],
-
-    "cookTemp": [
-        {
-          "id": 1,
-          "name": "Still Kickin",
-          "image": "https://s3.amazonaws.com/grazecart/farmcreekmeats/images/1675396517_63dc85a518b65.png",
-          "type": "Rare"
-          },
-        {
-            "id": 2,
-            "name": "Just Right",
-            "image": "https://www.pngkit.com/png/full/28-283453_steak-png.png",
-            "type": "Medium"
-          },
-        {
-            "id": 3,
-            "name": "Extra Crispy",
-            "image": "https://png.pngtree.com/png-clipart/20230622/ourmid/pngtree-grilled-beef-tenderloin-png-image_7297062.png",
-            "type": "Well done"
-        }
-    ],
-
-    "fixins": [
-        {
-          "id": 1,
-          "name": "Red Stuff",
-          "image": "https://pngimg.com/uploads/sauce/sauce_PNG72.png",
-          "type": "Ketchup"
-          },
-        {
-            "id": 2,
-            "name": "Yellow Stuff",
-            "image": "https://pngimg.com/uploads/sauce/sauce_PNG5.png",
-            "type": "Mustard"
-          },
-        {
-            "id": 3,
-            "name": "Rabbit Food",
-            "image": "https://clipart-library.com/images_k/head-of-lettuce-transparent/head-of-lettuce-transparent-23.png",
-            "type": "Lettuce"
-        },
-        {
-          "id": 4,
-          "name": "Toe Mater",
-          "image": "https://freepngdesign.com/content/uploads/images/tomato-slice-8592.png",
-          "type": "Tomato"
-      },
-      {
-        "id": 5,
-        "name": "Tear jerker",
-        "image": "https://www.seekpng.com/png/full/781-7813482_slice-png.png",
-        "type": "Red Onion"
+  "burgers": [
+    {
+      "id": 1,
+      "name": "Old Reliable",
+      "image": "https://clipart-library.com/images_k/cheeseburger-transparent/cheeseburger-transparent-13.png",
+      "type": "Beef"
+    },
+    {
+      "id": 2,
+      "name": "Saladshooter",
+      "image": "https://eluxemagazine.com/wp-content/uploads/2016/04/VeggieBurger.png",
+      "type": "Veggie"
+    },
+    {
+      "id": 3,
+      "name": "Turkalicious",
+      "image": "https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4115.png",
+      "type": "Turkey"
     }
-    ],
-    "dineType": [
-        {
-          "id": 1,
-          "name": "Should I Stay",
-          "image": "https://softtouchfurniture.com/wp-content/uploads/2019/09/Trophys-Bar-and-Grill-Double-Booth-White-out-1024x929.png",
-          "type": "Dine-In"
-          },
-        {
-            "id": 2,
-            "name": "Should I Go",
-            "image": "https://pngimg.com/uploads/shopping_bag/shopping_bag_PNG6380.png",
-            "type": "Takeout"
-          }
-
-
-    ],
-    
-    "newInsta": [
-      {
-        "id": 1,
-        "name": "",
-        "age": "",
-        "prounoun": "",
-        "insta": ""
-        }
-  
-
-
+  ],
+  "cookTemp": [
+    {
+      "id": 1,
+      "name": "Still Kickin",
+      "image": "https://s3.amazonaws.com/grazecart/farmcreekmeats/images/1675396517_63dc85a518b65.png",
+      "type": "Rare"
+    },
+    {
+      "id": 2,
+      "name": "Just Right",
+      "image": "https://www.pngkit.com/png/full/28-283453_steak-png.png",
+      "type": "Medium"
+    },
+    {
+      "id": 3,
+      "name": "Extra Crispy",
+      "image": "https://png.pngtree.com/png-clipart/20230622/ourmid/pngtree-grilled-beef-tenderloin-png-image_7297062.png",
+      "type": "Well done"
+    }
+  ],
+  "fixins": [
+    {
+      "id": 1,
+      "name": "Red Stuff",
+      "image": "https://pngimg.com/uploads/sauce/sauce_PNG72.png",
+      "type": "Ketchup"
+    },
+    {
+      "id": 2,
+      "name": "Yellow Stuff",
+      "image": "https://pngimg.com/uploads/sauce/sauce_PNG5.png",
+      "type": "Mustard"
+    },
+    {
+      "id": 3,
+      "name": "Rabbit Food",
+      "image": "https://clipart-library.com/images_k/head-of-lettuce-transparent/head-of-lettuce-transparent-23.png",
+      "type": "Lettuce"
+    },
+    {
+      "id": 4,
+      "name": "Toe Mater",
+      "image": "https://freepngdesign.com/content/uploads/images/tomato-slice-8592.png",
+      "type": "Tomato"
+    },
+    {
+      "id": 5,
+      "name": "Tear jerker",
+      "image": "https://www.seekpng.com/png/full/781-7813482_slice-png.png",
+      "type": "Red Onion"
+    }
+  ],
+  "dineType": [
+    {
+      "id": 1,
+      "name": "Should I Stay",
+      "image": "https://softtouchfurniture.com/wp-content/uploads/2019/09/Trophys-Bar-and-Grill-Double-Booth-White-out-1024x929.png",
+      "type": "Dine-In"
+    },
+    {
+      "id": 2,
+      "name": "Should I Go",
+      "image": "https://pngimg.com/uploads/shopping_bag/shopping_bag_PNG6380.png",
+      "type": "Takeout"
+    }
+  ],
+  "newInsta": [
+    {
+      "id": 1,
+      "name": "",
+      "age": "",
+      "prounoun": "",
+      "insta": ""
+    },
+    {
+      "name": "tester",
+      "age": "35",
+      "pronoun": "him",
+      "insta": "url.com",
+      "id": 2
+    },
+    {
+      "name": "demo",
+      "age": "84",
+      "pronoun": "her",
+      "insta": "urlerer.com",
+      "id": 3
+    }
   ]
-  
-
-
-  }
-
+}
