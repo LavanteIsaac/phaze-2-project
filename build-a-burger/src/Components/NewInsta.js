@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
+import Isaac from "../Images/isaac.jpg"
+import Pawwka from "../Images/pawwka.jpg"
+import Kent from "../Images/kent.jpg"
+
 
 function NewInsta() {
   const [userName, setUserName] = useState("");
@@ -61,6 +65,8 @@ function NewInsta() {
     }
   };
 
+
+
   return (
     <div className="new-insta-form">
         <header className="header-container">
@@ -85,9 +91,9 @@ function NewInsta() {
       <NavLink to="/App">~-GO BACK BACK!-~</NavLink>
       <ul className="selfie-card">
        <li>
-       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A boy and his burger" />
-       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A bro and his burger" />
-       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A burger" />
+       <img src= {Pawwka} alt="A boy and his burger" />
+       <img src= {Isaac} alt="A bro and his burger" />
+       <img src= {Kent} alt="A burger" />
       </li> 
       </ul>
     </div>
