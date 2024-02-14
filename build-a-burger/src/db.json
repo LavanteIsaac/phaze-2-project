@@ -94,18 +94,11 @@
       "insta": ""
     },
     {
-      "name": "tester",
-      "age": "35",
-      "pronoun": "him",
-      "insta": "url.com",
+      "name": "testing",
+      "age": "12",
+      "pronoun": "he/him",
+      "insta": "herieuruwqr.com",
       "id": 2
-    },
-    {
-      "name": "demo",
-      "age": "84",
-      "pronoun": "her",
-      "insta": "urlerer.com",
-      "id": 3
     }
   ]
 }

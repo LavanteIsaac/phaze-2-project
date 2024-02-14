@@ -31,5 +31,5 @@ return (
     </ul>
   );
 };
-export default FixinsType
 
+export default FixinsType
