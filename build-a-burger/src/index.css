@@ -36,6 +36,19 @@ code {
   margin-bottom: 20px;
 }
 
+.header-container {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.header-title {
+  margin: 0; 
+}
+
+.logo {
+  font-size: 24px; 
+}
+
 .burger-image {
   width: 700px;
   height: auto;
@@ -47,7 +60,7 @@ code {
   transform: scale(1.1);
 }
 
-  .card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,35 +96,16 @@ code {
   align-items: flex-start; 
 }
 
-/* .ui.inverted.menu .ui.toggle.checkbox input:checked~label {
-  color: black !important;
+.new-insta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-.dark-mode {
-  color: black;
-  background-color: #aaa;
-}
-
-.main.container {
-  padding-top: 5em;
-}
-
-.dark-mode .ui.segment, 
-.dark-mode .ui.feed,
-.dark-mode .ui.card, 
-.dark-mode .ui.cards>.card {
-  background-color: #333;
-  color: white !important;
-}
-
-.dark-mode .ui.feed>.event>.content .summary,
-.dark-mode .ui.feed>.event>.content .extra.text,
-.dark-mode .ui.cards>.card>.content>.header,
-.dark-mode .ui.cards>.card>.content>.description {
-  color: white !important;
-}
-
-.dark-mode .ui.feed>.event>.content .meta a,
-.dark-mode .ui.feed>.event>.content .summary>.date {
-  color: rgba(255,255,255,.6) !important;
-} */
+.selfie-card {
+  width: 700px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.1s ease;
+} 

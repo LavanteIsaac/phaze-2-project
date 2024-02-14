@@ -7,6 +7,26 @@ function NewInsta() {
   const [userPronoun, setUserPronoun] = useState("");
   const [userInsta, setUserInsta] = useState("");
 
+  const addUser = (newUser) => {
+    return fetch("http://localhost:3001/newInsta", { 
+      method: "POST",
+      headers: { "Content-Type": "Application/JSON" },
+      body: JSON.stringify(newUser),
+    })
+    .then((resp) => {
+      if (!resp.ok) {
+        throw new Error('Network response incorrect');
+      }
+      return resp.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error('fetch operation error:', error);
+    });
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -14,56 +34,62 @@ function NewInsta() {
       name: userName,
       age: userAge,
       pronoun: userPronoun,
-      insta: userInsta
+      insta: userInsta 
     };
-
-    addUser(newUser);
+    
+    addUser(newUser).then(() => {
+      setUserName("");
+      setUserAge("");
+      setUserPronoun("");
+      setUserInsta("");
+    }).catch((error) => {
+      console.log(error);
+    });
   };
 
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
-    switch(name) {
-      case 'name':
-        setUserName(value);
-        break;
-      case 'age':
-        setUserAge(value);
-        break;
-      case 'pronoun':
-        setUserPronoun(value);
-        break;
-      case 'image':
-        setUserInsta(value);
-        break;
-      default:
-    }
-  };
+    const stateUpdateFunction = {
+      "name": setUserName,
+      "age": setUserAge,
+      "pronoun": setUserPronoun,
+      "insta": setUserInsta, 
+    };
 
-  const addUser = (newUser) => {
-    fetch("http://localhost:3001/newInsta", { 
-      method: "POST",
-      headers: { "Content-Type": "Application/JSON" },
-      body: JSON.stringify(newUser),
-    })
-    .then((resp) => resp.json())
-    .then((data) => {
-      console.log(data); 
-    });
+    if (stateUpdateFunction[name]) {
+      stateUpdateFunction[name](value);
+    }
   };
 
   return (
     <div className="new-insta-form">
-      <h2>New Insta</h2>
+        <header className="header-container">
+        <span className="logo" role="img">🍔🍔🍔</span>
+        <h1 className="header-title">
+          Build-a-Burger
+          </h1>
+          <span className="logo" role="img">
+          🍔🍔🍔
+          </span>
+        
+      </header>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="User name" onChange={onChangeHandler}/>
-        <input type="text" name="age" placeholder="Age" onChange={onChangeHandler}/>
-        <input type="text" name="pronoun" placeholder="Pronouns" onChange={onChangeHandler}/>
-        <input type="text" name="image" placeholder="Image URL" onChange={onChangeHandler}/>
-     
+        <input type="text" name="name" placeholder="User name" value={userName} onChange={onChangeHandler}/>
+        <input type="text" name="age" placeholder="Age" value={userAge} onChange={onChangeHandler}/>
+        <input type="text" name="pronoun" placeholder="Pronouns" value={userPronoun} onChange={onChangeHandler}/>
+        <input type="text" name="insta" placeholder="Instagram URL" value={userInsta} onChange={onChangeHandler}/> {/* Adjusted name from "image" to "insta" to match state */}
         <button type="submit">Add New Insta</button>
       </form>
-      <NavLink to="/App">-GO BACK!-</NavLink>
-       
+      <h2>Thank you for being a part of the Build-A-Burger experience!</h2>
+      <p>Drop your info and insta handle and don't forget to tag us to join the build-a-wall</p>
+      <NavLink to="/App">~-GO BACK BACK!-~</NavLink>
+      <ul className="selfie-card">
+       <li>
+       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A boy and his burger" />
+       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A bro and his burger" />
+       <img src="https://wallpaperaccess.com/full/2004521.jpg" alt="A burger" />
+      </li> 
+      </ul>
     </div>
   );
 }

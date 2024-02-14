@@ -29,4 +29,5 @@ const DineType = ({ dineType }) => {
     </ul>
   );
 };
+
 export default DineType;
