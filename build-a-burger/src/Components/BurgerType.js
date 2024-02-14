@@ -2,12 +2,14 @@ import React, {useState} from 'react';
 
 const BurgerType = ({ burgers }) => {
 
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState({});
 
-    const toggleSelected = () => {
-      setSelected(!selected);
-
-  };
+    const toggleSelected = (id) => {
+      setSelected((prevSelected) => ({
+        ...prevSelected,
+        [id]: !prevSelected[id],
+      }));
+    };
 
   return (
 
@@ -17,15 +19,16 @@ const BurgerType = ({ burgers }) => {
           <h3>{burger.name}</h3>
           <img src={burger.image} alt={burger.name} id={burger.id}/>
           <p>{burger.type}</p>
-          {selected ? (
-        <button className="primary" onClick= {toggleSelected}>Selected</button>
-      ) : (
-        <button onClick= {toggleSelected}></button>
-      )}
-           </li>
+          {selected[burger.id] ? (
+            <button className="primary" onClick={() => toggleSelected(burger.id)}>
+              Selected ✔️
+            </button>
+          ) : (
+            <button onClick={() => toggleSelected(burger.id)}>Select</button>
+          )}
+        </li>
       ))}
     </ul>
-
   );
 };
 

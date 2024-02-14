@@ -5,7 +5,7 @@ function Done(){
     return(
         <div>
            <NavLink to="/">-GO BACK!-</NavLink>
-           <NavLink to="/Selfie">-DONE!-</NavLink>
+           <NavLink to="/NewInsta">-DONE!-</NavLink>
         </div>
     )
 }
