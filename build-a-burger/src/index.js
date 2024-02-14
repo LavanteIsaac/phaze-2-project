@@ -11,16 +11,12 @@ const routes = [
   {
     path: '/',
     element:  < Welcome />,
- 
-    
  },
 
 {
   path: '/App',
-  element: <App/>,
-  
+  element: <App/>,  
 },
-
   {
     path: '/NewInsta',
     element:  < NewInsta />
