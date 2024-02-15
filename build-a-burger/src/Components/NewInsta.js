@@ -4,7 +4,6 @@ import Isaac from "../Images/isaac.jpg"
 import Pawwka from "../Images/pawwka.jpg"
 import Kent from "../Images/kent.jpg"
 
-
 function NewInsta() {
   const [userName, setUserName] = useState("");
   const [userAge, setUserAge] = useState("");
@@ -31,8 +30,8 @@ function NewInsta() {
     });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+    const handleSubmit = (event) => {
+      event.preventDefault();
 
     const newUser = {
       name: userName,
@@ -65,20 +64,14 @@ function NewInsta() {
     }
   };
 
-
-
-  return (
+    return (
     <div className="new-insta-form">
-        <header className="header-container">
+      <header className="header-container">
         <span className="logo" role="img">🍔🍔🍔</span>
-        <h1 className="header-title">
-          Build-a-Burger
-          </h1>
-          <span className="logo" role="img">
-          🍔🍔🍔
-          </span>
-        
+        <h1 className="header-title">Build-a-Burger</h1>
+        <span className="logo" role="img">🍔🍔🍔</span> 
       </header>
+
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="User name" value={userName} onChange={onChangeHandler}/>
         <input type="text" name="age" placeholder="Age" value={userAge} onChange={onChangeHandler}/>
@@ -86,16 +79,18 @@ function NewInsta() {
         <input type="text" name="insta" placeholder="Instagram URL" value={userInsta} onChange={onChangeHandler}/> {/* Adjusted name from "image" to "insta" to match state */}
         <button type="submit">Add New Insta</button>
       </form>
+
       <h2>Thank you for being a part of the Build-A-Burger experience!</h2>
       <p>Drop your info and insta handle and don't forget to tag us to join the build-a-wall</p>
-      <NavLink to="/App">~-GO BACK BACK!-~</NavLink>
-      <ul className="selfie-card">
-       <li>
-       <img src= {Pawwka} alt="A boy and his burger" />
-       <img src= {Isaac} alt="A bro and his burger" />
-       <img src= {Kent} alt="A burger" />
+       
+      <li>
+       <img className="selfie-card" src= {Pawwka} alt="A boy and his burger" />
+       <img className="selfie-card" src= {Isaac} alt="A bro and his burger" />
+       <img className="selfie-card" src= {Kent} alt="A burger" />
       </li> 
-      </ul>
+      
+      <NavLink className="go-back-link" to="/App">*~-GO BACK BACK!-~*</NavLink>
+    
     </div>
   );
 }
