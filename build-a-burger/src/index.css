@@ -86,7 +86,7 @@ code {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: contain;
   margin-right: 1rem;
 }
@@ -131,4 +131,8 @@ code {
   font-size: 18px;
   padding: 10px 20px;
   text-decoration: none;
+}
+
+.list-item {
+  list-style: none;
 }

@@ -83,7 +83,7 @@ function NewInsta() {
       <h2>Thank you for being a part of the Build-A-Burger experience!</h2>
       <p>Drop your info and insta handle and don't forget to tag us to join the build-a-wall</p>
        
-      <li>
+      <li className="list-item">
        <img className="selfie-card" src= {Pawwka} alt="A boy and his burger" />
        <img className="selfie-card" src= {Isaac} alt="A bro and his burger" />
        <img className="selfie-card" src= {Kent} alt="A burger" />
