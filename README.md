@@ -28,6 +28,11 @@ To run this project locally, follow these steps:
 
 ## Functionality
 
+This single page application uses React.js to create 3 client side routes for users to naviagte using links on the page. 
+There are 8 componenents within the project that allow the user to build the burger that dreams are made of and post a selfie of 
+them with their burger. We use a json server as a restful API to store basic data including that which is submitted by users, 
+via a POST method request. 
+
 ### Landing Page http://localhost:3000/
 
 - The landing page serves as the entry point to the application.
