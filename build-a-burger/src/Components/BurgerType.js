@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 
 const BurgerType = ({ burgers }) => {
+const [selected, setSelected] = useState({});
 
-  const [selected, setSelected] = useState({});
-
-    const toggleSelected = (id) => {
+  const toggleSelected = (id) => {
       setSelected((prevSelected) => ({
         ...prevSelected,
         [id]: !prevSelected[id],
@@ -12,7 +11,6 @@ const BurgerType = ({ burgers }) => {
     };
 
   return (
-
     <ul className="burger-card">
       {burgers.map((burger) => (
         <li className='card' key={burger.id}> 
