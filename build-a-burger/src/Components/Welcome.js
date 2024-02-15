@@ -11,7 +11,7 @@ function Welcome() {
           alt="Cheese Burger"
         />
         <NavLink className="get-building-link" to="/App">
-          -GET BUILDING!-
+          *~-CLICK ME TO GET BUILDING!-~*
         </NavLink>
       </div>
     );

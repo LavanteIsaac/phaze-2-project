@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const DineType = ({ dineType }) => {
-
-  const [selected, setSelected] = useState({});
-  const toggleSelected = (id) => {
+const [selected, setSelected] = useState({});
+  
+const toggleSelected = (id) => {
     setSelected((prevSelected) => ({
       ...prevSelected,
       [id]: !prevSelected[id],
     }));
   };
 
-    return (
+  return (
         <ul className="dine-card">
           {dineType.map((dine) => (
             <li className='card' key={dine.id}> 
