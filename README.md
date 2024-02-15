@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
     npm start
     ```
 
-5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the application.
+5. Open your browser and go to [http://localhost:3001](http://localhost:3001) to view the application.
 
 ## Functionality
 
@@ -33,19 +33,19 @@ There are 8 componenents within the project that allow the user to build the bur
 them with their burger. We use a json server as a restful API to store basic data including that which is submitted by users, 
 via a POST method request. 
 
-### Landing Page http://localhost:3000/
+### Landing Page http://localhost:3001/
 
 - The landing page serves as the entry point to the application.
 - It includes navigation links to other pages within the app.
 - Users are greeted and introduced to the Build-A-Burger Selfie Submission App.
 
-### Build-A-Burger Page http://localhost:3000/App
+### Build-A-Burger Page http://localhost:3001/App
 
 - This page allows users to create and customize virtual burgers.
 - Users can select from a variety of ingredients and fixins to build their ideal burger.
 - The interface provides interactive elements for visualizing and modifying the burger.
 
-### Selfie Submission Page http://localhost:3000/NewInsta
+### Selfie Submission Page http://localhost:3001/NewInsta
 
 - Users can submit selfies featuring themselves and their burgers on this page.
 - The submission form collects user information, including name, age, pronouns, and Instagram handle, along with the selfie.
