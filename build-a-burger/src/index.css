@@ -36,7 +36,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #e41414;
+  color: #000000;
   justify-content: center;
   font-size: 36px;
   padding: 10px 20px;
@@ -124,7 +124,7 @@ code {
 .go-back-link,
 .done-link {
   display: flex;
-  color: #e10909;
+  color: #000000;
   flex-direction: column;
   align-items: center;
   justify-content: center;
