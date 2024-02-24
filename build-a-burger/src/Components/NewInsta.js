@@ -81,7 +81,7 @@ function NewInsta() {
       </form>
 
       <h2>Thank you for being a part of the Build-A-Burger experience!</h2>
-      <p>Drop your info and insta handle and don't forget to tag us to join the build-a-wall</p>
+      <p>Drop your info and insta handle and don't forget to tag us for a chance to be added to build-a-wall!</p>
        
       <li className="list-item">
        <img className="selfie-card" src= {Pawwka} alt="A boy and his burger" />
